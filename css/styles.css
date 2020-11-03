@@ -1,0 +1,289 @@
+/* ======= BASE ======== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 120px 0px;
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #2a2a2a;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 50px;
+}
+
+/* ======= BOOSTRAP REWRITE ======== */
+.nav-link:hover {
+  box-shadow: 0px 2px 0px 0px #CD9834;
+}
+
+.btn {
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, #CD9834 0%, #BA8B32 59.9%);
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+
+.btn-secondary {
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(180deg, #ad812e 0%, #a0782e 59.9%);
+}
+
+nav {
+  border-bottom: 1px solid #999999;
+}
+
+.nav-item{
+  margin-right: 16px!important;
+}
+
+/* ======= HEADER ======== */
+#header-contact {
+  background-color: #081c77;
+  display: flex;
+  justify-content: space-between;
+  color: #eeeeee;
+  font-size: 14px;
+  padding: 7px 26px;
+}
+
+#header-contact-items {
+  display: flex;
+}
+
+#hero {
+  height: 510px;
+  background-image: url(../img/hero-onix.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+
+#caption-title {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 52px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#caption-subtitle {
+  font-size: 20px;
+  color: #3b3b3b;
+  font-weight: 500;
+}
+
+.caption-btn {
+  font-size: 16px;
+  color: #eeeeee;
+  text-decoration: none;
+  padding: 9px 14px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+#cotizar {
+  background: linear-gradient(180deg, #016EA0 0%, #267DAF 59.9%);
+}
+
+#cotizar:hover, #informacion:hover {
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+#informacion {
+  background: linear-gradient(180deg, #688D9E 0%, #72ACCD 59.9%);
+}
+
+#cotizar:hover{
+  background: linear-gradient(180deg, #0c5d83 0%, #20638a 59.9%);
+}
+
+#informacion:hover{
+  background: linear-gradient(180deg, #496a79 0%, #5b8aa5 59.9%);
+}
+
+
+/* ======= SOCIAL PROOF ======== */
+.img-slider {
+  height: 200px;
+  overflow: hidden;
+}
+
+#carousel-sm{
+  display: none;
+}
+
+
+/* ======= FEATURES ======== */
+.my-card {
+  box-shadow: 0px 4px 8px 8px rgba(0, 0, 0, 0.06);
+}
+
+.my-card li{
+  list-style-type: circle;
+}
+
+.my-card-title {
+  text-align: center;
+  background-color: #222222;
+  font-size: 20px;
+  color: #eeeeee;
+  padding: 8px 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.my-card h4{
+  font-size: 18px;
+}
+
+.my-card-text {
+  padding: 20px;
+}
+
+.my-card ul{
+  list-style-position: inside;
+}
+
+#catalogo {
+  font-size: 18px;
+  background: #222222;
+  box-shadow: 2px 0px 8px rgba(36, 36, 36, 0.384);
+}
+
+
+/* ======= ABOUT ======== */
+#about {
+  background-color: #f2f2f2;
+}
+
+#jorge {
+  color: #081c77;
+}
+
+
+/* ======= CONTACT ======== */
+.half-input{
+  width: 49%;
+}
+
+
+/* ======= FOOTER ======== */
+footer {
+  background-color: #222222;
+  color: #cccccc;
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.footer-text {
+  color: #dddddd;
+}
+
+.footer-col-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #eeeeee;
+  font-weight: 500;
+}
+
+
+/* ======= REPONSIVE ======== */
+@media (max-width: 768px){
+  .section-title {
+    font-size: 24px;
+  }
+
+  .navbar-brand{
+    font-size: 16px;
+  }
+
+  #carousel-sm{
+    display: initial;
+  }
+
+  #carousel-lg{
+    display: none;
+  }
+
+  #logo {
+    width: 60px;
+  }
+
+  #hero {
+    height: 450px;
+    background-image: url(../img/hero-onix-mobile.jpg);
+  }
+
+  #caption-container {
+    align-items: flex-start!important;
+  }
+
+  #caption {
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  #caption-title {
+    margin-bottom: -8px!important;
+    font-size: 46px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  }
+
+  #caption-subtitle {
+    color: #eeeeee;
+    margin-bottom: 10px!important;
+    font-size: 16px;
+  }
+
+  #cotizar, #informacion {
+    font-size: 12px;
+    padding: 5px 6px;;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .my-card{
+    margin-bottom: 28px;
+  }
+  
+  #catalogo{
+    margin-top: 20px!important;
+  }
+
+  #about h4 {
+    font-size: 18px;
+  }
+
+  #jorge{
+    font-size: 22px;
+    margin-bottom: 6px!important;
+  }
+
+  footer .col-md-3{
+    margin-bottom: 20px;
+  }
+}
